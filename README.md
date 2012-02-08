@@ -1,6 +1,7 @@
-![Screenshot](http://i.imgur.com/wGcRVl.png)
+Update
+======
 
-(Don't worry, those are just the default "recommended" Hipster users - no friend disclosure here!)
+A better implementation of the same concept is available at https://github.com/rpetrich/ContactPrivacy - please use rpetrich's version instead for now.
 
 Address Book Privacy
 ====================
@@ -8,6 +9,10 @@ Address Book Privacy
 This MobileSubstrate Tweak hooks ABAddressBookCopyArrayOfAllPeople to prevent apps like Path from jacking your Address Book contacts without your permission.
 
 When a non-Apple app accesses this method, a UIAlert will appear documenting the attempted access and the hooked function will return an empty array.
+
+![Screenshot](http://i.imgur.com/wGcRVl.png)
+
+(Don't worry, those are just the default "recommended" Hipster users - no friend disclosure here!)
 
 TODO
 ====
