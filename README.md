@@ -1,3 +1,7 @@
+![Screenshot](http://i.imgur.com/wGcRV.png)
+
+(Don't worry, those are just the default "recommended" Hipster users - no friend disclosure here!)
+
 Address Book Privacy
 ====================
 
@@ -15,3 +19,18 @@ Prevent leaks: Support other methods for Address Book access; because ABAddressB
 Test more for stability.
 
 Eventually, to sate my curiosity, figure out why Apple apps crash when MSHookFunction is used.
+
+Building
+========
+
+Clone; init and update submodules.
+
+Obtain ldid for Theos. The instructions at the [iPhone Dev Wiki](http://iphonedevwiki.net/index.php/Theos/Getting_Started) tell you how.
+
+Jailbreak and Install OpenSSH on your iPhone using Cydia.
+
+export THEOS_DEVICE_IP = <your iPhone's IP>
+
+make package; make install
+
+This should automatically re-spring your iPhone and you should be ready to go. In some edge cases I've seen the phone require a reboot, especially if you have a previous version installed.
