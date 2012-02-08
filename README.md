@@ -12,8 +12,6 @@ Obviously, save prefs on a per-app basis to allow certain apps to access ABAddre
 
 Prevent leaks: Support other methods for Address Book access; because ABAddressBookCopyArrayOfAllPeople is both the easiest and the most documented way to do this, 99% of apps use it, but a few don't.
 
-Ensure the UIAlert box is popped from the correct context; right now certain apps cause Core Animation fencing issues which delay the appearance of the dialog box.
-
 Test more for stability.
 
 Eventually, to sate my curiosity, figure out why Apple apps crash when MSHookFunction is used.
