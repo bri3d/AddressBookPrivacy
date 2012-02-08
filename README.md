@@ -1,4 +1,4 @@
-![Screenshot](http://i.imgur.com/wGcRV.png)
+![Screenshot](http://i.imgur.com/wGcRVl.png)
 
 (Don't worry, those are just the default "recommended" Hipster users - no friend disclosure here!)
 
