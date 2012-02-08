@@ -1,1 +1,7 @@
-{"Filter":{"Bundles":["com.apple.AddressBook"]}}
+{
+  "Filter" : {
+    "Bundles" : [
+      "com.apple.AddressBook"
+    ]
+  }
+}
