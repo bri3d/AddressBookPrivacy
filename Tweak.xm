@@ -8,7 +8,9 @@ ABAddressBookRef hooked_ABAddressBookCreate() {
 }
 CFArrayRef (*original_ABAddressBookCopyArrayOfAllPeople)(ABAddressBookRef addressBook);
 CFArrayRef hooked_ABAddressBookCopyArrayOfAllPeople(ABAddressBookRef addressBook) {
-  NSLog(@"Got ABAddressBookCopyArrayOfAllPeople");
+  NSLog(@"GOT ABAddressBookCopyArrayOfAllPeople, BLOCKING");
+  UIAlertView *addressBookAlert = [[[UIAlertView alloc] initWithTitle:@"Address Book Privacy" message:@"An App is trying to use your Address Book!" delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil] autorelease];
+  [addressBookAlert show];
   return CFArrayCreate(NULL,NULL,0,NULL);
   //return original_ABAddressBookCopyArrayOfAllPeople(addressBook);
 }
