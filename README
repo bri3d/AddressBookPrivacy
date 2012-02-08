@@ -1,7 +1,0 @@
-Address Book Privacy
-====================
-
-This MobileSubstrate Tweak hooks ABAddressBookCopyAllPeople to prevent apps like Path from jacking your Address Book contacts without your permission.
-
-When a non-Apple app accesses this method, a UIAlert will appear documenting the attempted access and the hooked function will return an empty array.
-
